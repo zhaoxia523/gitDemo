@@ -1,13 +1,3 @@
-.topNav{
-    height: 40px;
-    width: 100%;
-}
-.topNavCon{
-    height: 40px;
-    width: 1000px;
-    margin: 0 auto;
-    line-height: 40px;
-}
 
 .brand span:nth-child(2) {
     color: red;

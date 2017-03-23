@@ -12,11 +12,8 @@ angular.module('app',['ui.router'])
                     '' : {
                         templateUrl : 'app/main/main.html'
                     },
-                    'topNav@index' : {
-                        templateUrl : 'app/topNav/topNav.html'
-                    },
-                    'nav@index' : {
-                       templateUrl : 'app/nav/nav.html'
+                    'main@index' : {
+                      templateUrl : 'app/yunsou/ys/ys.html'
                     }
                 }
             })

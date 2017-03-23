@@ -62,9 +62,11 @@ text-decoration: none;
     margin-top: 0;
 }
 
-/*.zxbox span{*/
-    /*vertical-align: top;*/
-/*}*/
+.cx{
+    border-left: 3px solid rgb(0,191,255);
+    margin-top: 30px;
+    margin-left: 20px;
+}
 
 
 
