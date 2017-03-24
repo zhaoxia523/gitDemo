@@ -3,18 +3,6 @@
  */
 'use strict';
 angular.module('app', ['ui.router'])
-    .config(function ($stateProvider, $urlRouterProvider) {
+    .config(function ($stateProvider, $urlRouterProvider,$locationProvider) {
         $urlRouterProvider.otherwise('/index');
-        $stateProvider
-            .state('index', {
-                url: '/index',
-                views: {
-                    '': {
-                        templateUrl: 'app/main/main.html'
-                    },
-                    'main@index': {
-                        templateUrl: 'app/yunsou/ys/ys.html'
-                    }
-                }
-            })
     });
