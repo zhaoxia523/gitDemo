@@ -1,7 +1,6 @@
 <!--<div ng-include="'app/topNav/topNav.html'"></div>-->
 <!--<div ng-include="'app/nav/nav.html'"></div>-->
 <div class="container">
-
     <div class="ysNav">
         <ul>
             <li><a href=""><img src="assets/img/zh.gif" alt=""/>综合</a></li>
@@ -24,8 +23,12 @@
         </div>
     </div>
 
+</div>
 
-    <div class="xstotal">
-        <span>为您找到相关结果{{cx.count}}个，耗时{{cx.time}}</span>
+<div class="container">
+    <div class="xstotal col-xs-12">
+        <span>为您找到相关结果
+            <span>{{cx.count}}</span>个，耗时
+            <span>{{cx.time}}</span></span>
     </div>
 </div>

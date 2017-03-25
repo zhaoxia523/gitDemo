@@ -1,4 +1,4 @@
-<div>
-    <div ui-view="topNav"></div>
-    <div ui-view="nav"></div>
-</div>
+<div ng-include="'app/topNav/topNav.html'"></div>
+<div ng-include="'app/nav/nav.html'"></div>
+
+<div ui-view="main"></div>
