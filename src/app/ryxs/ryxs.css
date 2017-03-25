@@ -1,0 +1,215 @@
+
+/*人员基本信息开始*/
+.ryMessage li{
+    border-bottom: 1px solid ghostwhite;
+    list-style: none;
+    margin: 10px 10px 0 0;
+}
+
+.ryMessage .rysx{
+    color: lightgrey;
+}
+.ryMessage .ryzd{
+    color: red;
+}
+
+.ryMessage li h3 small{
+    color: #00868B;
+}
+.ryMessage li h3 .ryCard{
+    margin-left: 5px;
+}
+
+.ryMessage .ryage{
+    margin-left: 90px;
+}
+
+.ryMessage .ryhy{
+    margin-left: 170px;
+}
+
+/*基本信息右边图片*/
+.czrk{
+    float: left;
+    margin-right: 10px;
+}
+
+.czrk p{
+    margin-top: 5px;
+    color: #00868B;
+}
+/*人员基本信息结束*/
+
+/*关系线索开始*/
+/*关系线索头*/
+.gxTitle{
+    border-bottom: 1px solid whitesmoke;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.gxTitle .gx_span{
+    font-weight: bold;
+    vertical-align: bottom;
+}
+
+.gxTitle .gxtp_span{
+    font-weight: bold;
+    font-size: 12px;
+}
+
+/*家庭关系*/
+.gzgx{
+    border-bottom: 1px dashed whitesmoke;
+    padding-bottom: 10px;
+}
+
+.jtgx_left{
+    padding-top: 10px;
+    border-right: 1px solid whitesmoke;
+}
+
+.gxcolor{
+    color: rgb(0,191,255);
+    vertical-align: bottom;
+}
+
+
+.jtgxxx .jtgxText{
+    width: 45px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.jtgxxx .gtgxpic{
+    width: 45px;
+    height: 65px;
+    position: relative;
+    margin-top: 10px;
+}
+
+.jtgxxx .gtgxpic img{
+    width: 45px;
+    height: 65px;
+}
+
+.jtgxxx .gtgxpic .jtgxName{
+    background: black;
+    opacity: 0.3;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border: 1px solid whitesmoke;
+    color: white;
+    font-size: 12px;
+}
+
+
+.jtgx_right{
+    padding-top: 10px;
+}
+
+.jtgxxx ul li{
+    list-style: none;
+    float: left;
+    margin-right: 30px;
+}
+/*关系线索结束*/
+
+/*社交线索开始*/
+.sj{
+    font-size: 12px;
+    /*font-weight: 600;*/
+    border-right: 1px solid whitesmoke;
+    padding-top: 10px;
+}
+
+.sj .sj_title{
+    color: rgb(0, 191, 255);
+    vertical-align: middle;
+}
+
+.sj .sj_describe{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.sj .wldz{
+    margin-top: 5px;
+}
+
+.sj .hlw .sj_span{
+    color: gainsboro;
+}
+.zjhd ul{
+    margin: 10px 0 10px 0;
+    background: pink;
+}
+
+.zjhd ul li{
+    list-style: none;
+    float: left;
+    margin-right: 35px;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    background: lightgrey;
+    text-align: center;
+    position: relative;
+    padding-top: 3px;
+}
+
+.zjhd ul li img{
+    width: 28px;
+    height: 30px;
+}
+
+.zjhd ul li .label{
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    padding: 2px 3px 2px 3px;
+}
+
+.zjhd ul li .labelactive{
+    background: rgb(0, 191, 255);
+}
+
+.lxdz{
+    margin-top: 10px;
+    font-size: 14px;
+    margin-left: -30px;
+}
+
+.lxdz ul li{
+    list-style: none;
+    margin-top: 5px;
+    font-size: 12px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+.lxdz ul li .circle{
+    display: inline-block;
+    margin-right: 10px;
+    width: 5px;
+    height: 5px;
+    background: #000;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.lxdz ul li .lxdz_addr{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.sj_right{
+    border-right: none;
+}
+
+/*社交线索结束*/
