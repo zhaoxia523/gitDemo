@@ -4,20 +4,27 @@
 'use strict';
 
 angular.module('app')
-    .config(function($stateProvider){
+    .config(function ($stateProvider) {
         $stateProvider
-            .state('index',{
-                url : '/index',
+            .state('index', {
+                url: '/index',
                 templateUrl: 'app/main/main.html',
                 controller: 'mainCtrl'
             })
-            .state('index.ys',{
+            .state('index.ys', {
                 url: '/ys',
-                templateUrl: 'app/yunsou/ys.html'
+                views: {
+                    'main@index': {
+                        templateUrl: 'app/yunsou/ys.html'
+                    }
+                }
             })
-            .state('index.ys.ryxs',{
+            .state('index.ys.ryxs', {
                 url: '/ryxs',
-                templateUrl: 'app/ryxs/ryxs.html'
+                views: {
+                    'main@index': {
+                        templateUrl: 'app/ryxs/ryxs.html'
+                    }
+                }
             });
-        console.log('djef');
     });
