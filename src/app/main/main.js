@@ -8,23 +8,48 @@ angular.module('app')
         $stateProvider
             .state('index', {
                 url: '/index',
-                templateUrl: 'app/main/main.html',
-                controller: 'mainCtrl'
-            })
-            .state('index.ys', {
-                url: '/ys',
-                views: {
+                views:{
+                    '': {
+                        templateUrl: 'app/main/main.html'
+                    },
                     'main@index': {
-                        templateUrl: 'app/yunsou/ys.html'
+                        templateUrl: 'app/home/home.html'
+                    }
+                }
+
+            })
+            .state('index.message', {
+                url: '/message',
+                views:{
+                    //'': {
+                    //    templateUrl: 'app/main/main.html'
+                    //},
+                    'main@index': {
+                        template: '这是消息页'
                     }
                 }
             })
-            .state('index.ys.ryxs', {
-                url: '/ryxs',
-                views: {
+            .state('index.perInformation',{
+                url:'/perInformation',
+                views:{
+                    //'': {
+                    //    templateUrl: 'app/main/main.html'
+                    //},
                     'main@index': {
-                        templateUrl: 'app/ryxs/ryxs.html'
+                        template: '这是个人信息页'
                     }
                 }
-            });
+            })
+            .state('index.perSetting',{
+                url:'/perSetting',
+                views:{
+                    //'': {
+                    //    templateUrl: 'app/main/main.html'
+                    //},
+                    'main@index': {
+                        template: '这是个人设置页'
+                    }
+                }
+
+            })
     });

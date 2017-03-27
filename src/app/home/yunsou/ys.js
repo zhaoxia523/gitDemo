@@ -3,11 +3,16 @@
  */
 'use strict';
 
-angular.module('app',[])
-.config(function($stateProvider){
+angular.module('app')
+    .config(function ($stateProvider) {
         $stateProvider
-            //.state('index.ys',{
-            //    url: '/ys',
-            //    templateUrl: 'app/yunsou/ys.html'
-            //});
+            .state('index.ys.ryxs', {
+                url: '/ryxs',
+                views: {
+                    'main@index': {
+                        templateUrl: 'app/home/yunsou/ryxs/ryxs.html'
+                    }
+                }
+
+            });
     });
