@@ -12,7 +12,8 @@ angular.module('app')
                     'main@index': {
                         templateUrl: 'app/home/yunsou/ys.html'
                     }
-                }
+                },
+                // controller: "ysCtrl"
 
             })
     });

@@ -53,34 +53,36 @@
                                     <span>籍贯：四川省梓潼县</span>
                                 </div>
                                 <div class="col-sm-12 cxjg">
-                                    <div class="row">
+                                    <div class="row"  ng-repeat="record in records" ng-controller="ysCtrl">
                                         <div class="col-sm-3 xxlb">
                                             <ul>
-                                                <li><span></span>户籍变动信息(7)</li>
-                                                <li><span></span>户籍变动信息(7)</li>
-                                                <li><span></span>户籍变动信息(7)</li>
+                                                <li><span></span>{{record.title}}({{record.number}})</li>
+                                                <!--<li><span></span>户籍变动信息(7)</li>-->
+                                                <!--<li><span></span>户籍变动信息(7)</li>-->
                                             </ul>
                                         </div>
                                         <div class="col-sm-9 xxxq">
                                             <ul>
-                                                <li><span>身高:170</span>
-                                                    <span>何地来本市祥址:贵州省中国中巴农场</span>
-                                                    <span>性别:男</span>
-                                                    <span>何地来本市行政区划:贵州省中国</span>
-                                                    <span>最后修改单位:贵州省清真市</span>
+                                                <li>
+                                                    {{record.describe}}
+                                                    <!--<span>身高:170</span>-->
+                                                    <!--<span>何地来本市祥址:贵州省中国中巴农场</span>-->
+                                                    <!--<span>性别:男</span>-->
+                                                    <!--<span>何地来本市行政区划:贵州省中国</span>-->
+                                                    <!--<span>最后修改单位:贵州省清真市</span>-->
                                                 </li>
-                                                <li><span>身高:170</span>
-                                                    <span>何地来本市祥址:贵州省中国中巴农场</span>
-                                                    <span>性别:男</span>
-                                                    <span>何地来本市行政区划:贵州省中国</span>
-                                                    <span>最后修改单位:贵州省清真市</span>
-                                                </li>
-                                                <li><span>身高:170</span>
-                                                    <span>何地来本市祥址:贵州省中国中巴农场</span>
-                                                    <span>性别:男</span>
-                                                    <span>何地来本市行政区划:贵州省中国</span>
-                                                    <span>最后修改单位:贵州省清真市</span>
-                                                </li>
+                                                <!--<li><span>身高:170</span>-->
+                                                    <!--<span>何地来本市祥址:贵州省中国中巴农场</span>-->
+                                                    <!--<span>性别:男</span>-->
+                                                    <!--<span>何地来本市行政区划:贵州省中国</span>-->
+                                                    <!--<span>最后修改单位:贵州省清真市</span>-->
+                                                <!--</li>-->
+                                                <!--<li><span>身高:170</span>-->
+                                                    <!--<span>何地来本市祥址:贵州省中国中巴农场</span>-->
+                                                    <!--<span>性别:男</span>-->
+                                                    <!--<span>何地来本市行政区划:贵州省中国</span>-->
+                                                    <!--<span>最后修改单位:贵州省清真市</span>-->
+                                                <!--</li>-->
                                             </ul>
                                         </div>
                                     </div>
