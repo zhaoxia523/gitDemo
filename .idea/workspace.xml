@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="014508e9-7c42-42a5-833d-bc1160951fcb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/record.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/home/yunsou/ys.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/home/home.js" afterPath="$PROJECT_DIR$/src/app/home/home.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/home/yunsou/ys.html" afterPath="$PROJECT_DIR$/src/app/home/yunsou/ys.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.html" afterPath="$PROJECT_DIR$/src/index.html" />
-    </list>
+    <list default="true" id="014508e9-7c42-42a5-833d-bc1160951fcb" name="Default" comment="" />
     <ignored path="gitDemo.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -153,8 +146,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="37" />
-    <option name="y" value="63" />
+    <option name="x" value="55" />
+    <option name="y" value="36" />
     <option name="width" value="1280" />
     <option name="height" value="714" />
   </component>
@@ -404,15 +397,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1490579457702</updated>
-      <workItem from="1490617805722" duration="3806000" />
+      <workItem from="1490617805722" duration="3888000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3806000" />
+    <option name="totallyTimeSpent" value="3888000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="37" y="63" width="1280" height="714" extended-state="0" />
+    <frame x="55" y="36" width="1280" height="714" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21604449" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
