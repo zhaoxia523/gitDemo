@@ -10,8 +10,13 @@ angular.module('app')
                 url: '/ys',
                 views: {
                     'main@index': {
-                        templateUrl: 'app/yunsuo/renyuan/renyuan.html'
+                        templateUrl: 'app/yunsuo/yunsuo.html'
                     }
                 }
+            })
+            .state('index.ys.renyuan',{
+                url : '/renyuan',
+                templateUrl: 'app/yunsuo/renyuan/renyuan.html',
+                controller:'renyuanCtrl'
             })
     });

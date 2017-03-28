@@ -1,0 +1,45 @@
+.cloudSearch{
+    width: 1000px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.searchContent{
+    padding: 15px;
+}
+
+.searchLogo{
+    margin: 25px 20px 0 25px;
+}
+.search{
+    width: 780px;
+    height: 85px;
+    margin-bottom: 20px;
+    /*text-align: center;*/
+}
+
+.searchNav{
+    margin-left:180px;
+    margin-bottom: 5px;
+}
+.searchSpan{
+    margin: 10px;
+}
+
+.searchInput>input{
+    width: 650px;
+    height: 40px;
+    border: 1px solid rgb(80,172,225);
+    border-radius: 5px 0 0 5px;
+    /*margin-left:-50px;*/
+}
+
+.searchInput>button{
+    width: 100px;
+    line-height:40px;
+    background: rgb(80,172,225);
+    outline: none;
+    border: none;
+    margin-left: -5px;
+    border-radius: 0 5px 5px 0;
+}

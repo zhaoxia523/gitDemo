@@ -5,7 +5,6 @@
 angular.module('app')
     .controller('mainCtrl', ['$scope', '$http', function ($scope, $http) {
         $http.get('../server/loginUser.json').success(function (data) {
-            console.log(arguments);
             $scope.messgaeCount = data.messgaeCount;
             $scope.ryCount = data.ryCount;
             $scope.userName = data.userName;
