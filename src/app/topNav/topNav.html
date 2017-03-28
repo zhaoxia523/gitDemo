@@ -1,17 +1,31 @@
-<div class="container">
-    <a href="#" class="navbar-brand brand">
+<div class="topNav">
+    <div class="topNav_left pull-left">
         <img src="assets/img/logo38.png"/>
         <span>情报<span> 数智通</span></span>
-    </a>
-
-    <div class="nav-collapse  hidden-xs" ng-controller="mainCtrl">
-        <ul class="pull-right rightNav">
-            <li><a ui-sref="index" ><img ng-src="{{isActive ? 'assets/img/nhome.gif' : 'assets/img/home.gif'}}"/></a></li>
-            <li><a ui-sref="index.message"><img ng-src="{{isActive ? 'assets/img/axx.gif' : 'assets/img/xx.gif'}}"/><span class="badge">{{messgaeCount}}</span></a></li>
-            <li><a ui-sref="index.perInformation"><img ng-src="{{isActive ? 'assets/img/anperson.gif' : 'assets/img/nperson.gif'}}"/><span class="badge">{{ryCount}}</span></a></li>
-            <li><span>{{userName}}</span><a ui-sref="index.perSetting"><img src="assets/img/dlp.gif"/></a></li>
-        </ul>
+    </div>
+    <div class="topNav_right pull-right" ng-controller="mainCtrl">
+        <span class="nav_span">
+            <a ui-sref="index">
+                <i class="fa fa-home navicon"></i>
+            </a>
+        </span>
+        <span class="nav_span">
+            <a ui-sref="index.message">
+                <i class="fa fa-bell navicon"></i>
+                <span class="badge">{{messgaeCount}}</span>
+            </a>
+        </span>
+        <span class="nav_span">
+            <a ui-sref="index.perInformation">
+                <i class="fa fa-user navicon"></i>
+                <span class="badge">{{ryCount}}</span>
+            </a>
+        </span>
+        <span class="nav_span">
+            <a ui-sref="index.perSetting">
+                <span class="user_name">{{userName}}</span>
+                <img src="assets/img/dlp.gif"/>
+            </a>
+        </span>
     </div>
 </div>
-
-

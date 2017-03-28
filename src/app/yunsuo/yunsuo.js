@@ -1,7 +1,7 @@
 /**
- * Created by hzjs-pc on 2017/3/27.
+ * Created by hzjs-pc on 2017/3/28.
  */
-
+'use strict';
 
 angular.module('app')
     .config(function ($stateProvider) {
@@ -10,10 +10,8 @@ angular.module('app')
                 url: '/ys',
                 views: {
                     'main@index': {
-                        templateUrl: 'app/home/yunsou/ys.html'
+                        templateUrl: 'app/yunsuo/renyuan/renyuan.html'
                     }
                 }
-
             })
     });
-
