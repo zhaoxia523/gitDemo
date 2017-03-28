@@ -1,0 +1,127 @@
+<div>
+<div class="container">
+    <!--导航栏-->
+    <div class="ysNav">
+        <ul>
+            <li><a href=""><img src="assets/img/zh.gif" alt=""/>综合</a></li>
+            <li><a href=""><img src="assets/img/ry.gif" alt=""/>人员</a></li>
+            <li><a href=""><img src="assets/img/aj.gif" alt=""/>案件</a></li>
+            <li><a href=""><img src="assets/img/dz.gif" alt=""/>地址</a></li>
+            <li><a href=""><img src="assets/img/tx.gif" alt=""/>通讯</a></li>
+        </ul>
+    </div>
+
+    <!--搜索框-->
+    <div class="search">
+        <img src="assets/img/yunsuo_logo.png" class="searchLogo"/>
+        <span class="inputsearch">
+            <input type="text" placeholder="请输入关键字"/><a><img src="assets/img/search.png" alt=""/></a>
+        </span>
+
+        <div class="checkbox xzbox">
+            <label>
+                <input type="checkbox"/>整词(提示支持占位符"?"号及"*"号语法,如张*)
+            </label>
+        </div>
+    </div>
+</div>
+
+
+
+<!--查询的信息结果-->
+<div class="container">
+    <div class="cx col-md-12">
+        <span>为您找到相关结果{{cx.count}}个，耗时{{cx.time}}</span>
+    </div>
+
+    <!--查询结果-->
+    <div class="cxxx" ng-controller="ysCtrl">
+        <div class="col-sm-12">
+            <div class="row" ng-repeat="basicInfo in basicInfos">
+                <div class="col-sm-9 leftxx">
+                    <div class="col-sm-12">
+                        <div class="col-sm-1 cxtp">
+                            <div class="row">
+                                <img ng-src="basicInfo.ry_img" alt=""/>
+                            </div>
+                        </div>
+                        <div class="col-sm-11">
+                            <div class="col-sm-12 jbxx">
+                                <span>{{basicInfo.ry_name}}</span>
+                                <span>{{basicInfo.ry_sex}}</span>
+                                <span class="idCard">{{basicInfo.ry_card}}</span>
+                                <span>出生日期：{{basicInfo.ry_birth}}</span>
+                                <span>籍贯：{{basicInfo.ry_ancestral}}</span>
+                            </div>
+                            <div class="col-sm-12 cxjg">
+                                <div class="row" ng-repeat="record in basicInfo.records">
+                                    <div class="col-sm-3 xxlb">
+                                        <ul>
+                                            <li><span></span>{{record.record_title}}({{record.record_number}})</li>
+                                            <!--<li><span></span>户籍变动信息(7)</li>-->
+                                            <!--<li><span></span>户籍变动信息(7)</li>-->
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-9 xxxq">
+                                        <ul>
+                                            <li>
+                                                {{record.record_describe}}
+                                                <!--<span>身高:170</span>-->
+                                                <!--<span>何地来本市祥址:贵州省中国中巴农场</span>-->
+                                                <!--<span>性别:男</span>-->
+                                                <!--<span>何地来本市行政区划:贵州省中国</span>-->
+                                                <!--<span>最后修改单位:贵州省清真市</span>-->
+                                            </li>
+                                            <!--<li><span>身高:170</span>-->
+                                            <!--<span>何地来本市祥址:贵州省中国中巴农场</span>-->
+                                            <!--<span>性别:男</span>-->
+                                            <!--<span>何地来本市行政区划:贵州省中国</span>-->
+                                            <!--<span>最后修改单位:贵州省清真市</span>-->
+                                            <!--</li>-->
+                                            <!--<li><span>身高:170</span>-->
+                                            <!--<span>何地来本市祥址:贵州省中国中巴农场</span>-->
+                                            <!--<span>性别:男</span>-->
+                                            <!--<span>何地来本市行政区划:贵州省中国</span>-->
+                                            <!--<span>最后修改单位:贵州省清真市</span>-->
+                                            <!--</li>-->
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="col-sm-12 xxbq">
+                        <!--<div class="row">-->
+                        <span class="label label-default"><img src="assets/img/bq1.gif" alt=""/></span><span class="label label-default label_tag" ng-repeat="tag in basicInfo.tags">{{tag.tag}}</span>
+
+
+                        <!--<span class="label label-default">国内旅客国内旅客</span>-->
+                        <!--<span class="label label-default">国内旅客</span>-->
+                        <!--<span class="label label-default">国内旅客</span>-->
+                        <!--</div>-->
+                        <!--<img src="assets/img/bq.gif" alt=""/>-->
+
+                    </div>
+                </div>
+                <!--<div class="clearfix"></div>-->
+                <div class="col-sm-3 rightLB">
+                    <div class="row">
+                        <i class="fa fa-file-text" style="color:#5cace2;margin-right:5px !important;font-size:15px;"></i>
+                        <span>历史涉案:</span>
+                        <ul>
+                            <li><span class="lxdh"></span>联系电话: {{basicInfo.ry_phone}}</li>
+                            <li><span class="gxr"></span>关系人: {{basicInfo.ry_contact}}</li>
+                            <li><span class="lssa"></span>历史涉案: {{basicInfo.ry_history_involved}}</li>
+                            <li><span class="zxgj"></span>最新轨迹: {{basicInfo.ry_latest_track}}</li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-primary btn-sm pull-right" ui-sref="index.ys.ryxs">人员线索</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</div>
+
