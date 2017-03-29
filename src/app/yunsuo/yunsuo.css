@@ -1,5 +1,5 @@
 .cloudSearch{
-    width: 1000px;
+    width: 1200px;
     height: 100px;
     margin: 0 auto;
 }
@@ -31,12 +31,13 @@
     height: 40px;
     border: 1px solid rgb(80,172,225);
     border-radius: 5px 0 0 5px;
+    padding-left: 8px;
     /*margin-left:-50px;*/
 }
 
 .searchInput>button{
     width: 100px;
-    line-height:40px;
+    line-height:38px;
     background: rgb(80,172,225);
     outline: none;
     border: none;

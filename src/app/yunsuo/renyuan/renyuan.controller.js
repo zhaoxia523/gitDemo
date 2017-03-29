@@ -1,5 +1,5 @@
 /**
- * Created by hzjs-pc on 2017/3/28.
+ * Created by hzjs-pc on 2017/3/29.
  */
 'use strict';
 angular.module('app')
@@ -7,10 +7,14 @@ angular.module('app')
         $http.get('../server/record.json').success(function (data) {
             console.log(data);
             $scope.basicInfos = data.basicInfos;
-
-            $scope.search = function () {
-                $state.go("index.ys.renyuan");
-            };
             //$scope.basicInfos.records = data.basicInfos.records;
-        })
+
+        });
+
+        $scope.searchDetail = function(){
+            $state.go('index.ys.renyuan');
+        };
+        $scope.goToryxs = function(){
+            $state.go('index.ys.renyuan.ryxs');
+        }
     }]);

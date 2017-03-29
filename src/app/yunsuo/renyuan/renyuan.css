@@ -1,116 +1,58 @@
-
-.ysNav{
-    width:400px;
-    height: 45px;
-    margin: 0 auto;
-    text-align: center;
-    padding-top: 18px;
-}
-
-.ysNav ul{
-    list-style: none;
-}
-
-.ysNav ul li{
-    float: left;
-    margin-left: 25px;
-
-}
-
-.ysNav ul li a{
-text-decoration: none;
-    font-size: 16px;
-    color: black;
-}
-.ysNav ul li a img{
-    margin-right: 5px;
-}
-
-.search{
-    width: 80%;
-    height: 40px;
-    margin: 0 auto;
-}
-
-.inputsearch{
-    margin-left: 40px;
-}
-
-.inputsearch input{
-    display: inline-block;
-    height: 40px;
-    width: 60%;
-    border: 1px solid rgb(0,191,255);
-    outline: none;
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
-    padding-left: 5px;
-}
-.inputsearch a{
-    display: inline-block;
-    width: 100px;
-    height: 40px;
-    background-color: rgb(0,191,255);
-    vertical-align: top;
-    text-align: center;
-    line-height: 40px;
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-.xzbox{
-    margin-left: 170px;
-    margin-top: 0;
-}
-
-.cx{
-    border-left: 3px solid rgb(0,191,255);
-    margin-top: 30px;
-    margin-left: 20px;
-}
-
-.cxxx{
-    margin-top: 30px;
-    border-bottom: 1px solid grey;
+.queryTitle{
+    border-left: 2px solid rgb(80,172,225);
+    font-size: 12px;
+    padding-left: 8px;
     margin-bottom: 25px;
 }
 
-.leftxx{
-    border-right: 3px solid rgb(0,191,255);
-
+.queryContent{
+    border-bottom: 1px solid lightgrey;
+    margin-bottom: 15px;
 }
 
-.jbxx{
-    white-space: nowrap;
-     text-overflow: ellipsis;
-     overflow: hidden;
+.listLeft{
+    width: 75%;
+    border-right: 2px solid rgb(80,172,225);
+    margin-bottom: 30px;
 }
 
-.jbxx span{
-    margin-right: 15px;
+.listImg{
+    width: 76px;
+    height: 100px;
+    margin: 0 20px 20px 0;
+}
+
+.listContent{
+    width: 89%;
+    position: relative;
+}
+
+.listBasic span{
+    margin-right: 10px;
     font-size: 15px;
-
 }
 
-.jbxx span:first-child{
+.listBasic span:first-child{
     font-size: 18px;
     font-weight: bold;
 }
 
-.jbxx span:nth-child(3){
+.listBasic span:nth-child(3){
     color: rgb(0,191,255);
 }
 
-.xxlb ul li{
-    margin-top: 10px;
-    overflow: hidden;
+.sourceTable{
+    width: 26%;
+    margin-right: 10px;
     white-space: nowrap;
-    text-overflow: ellipsis;
+    text-overflow:ellipsis;
+    overflow: hidden;
+    margin-top: 5px;
 }
 
-.xxlb ul li span{
+.listDetail .sourceTable span:first-child{
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 5px;
     width: 5px;
     height: 5px;
     background: #000;
@@ -118,70 +60,68 @@ text-decoration: none;
     vertical-align: middle;
 }
 
-.xxxq ul li{
-    list-style: none;
-    margin-top: 10px;
-    overflow: hidden;
+.detail{
+    width: 64%;
     white-space: nowrap;
-    text-overflow: ellipsis;
+    text-overflow:ellipsis;
+    overflow: hidden;
+    margin-top: 5px;
 }
 
-.xxxq ul li span{
-    margin-right: 5px;
+.listContent>i{
+    position: absolute;
+    top: 82px;
+    right: 15px;
 }
 
-.xxbq{
-    margin-top: 10px;
-    margin-bottom: 20px;
+.listMark{
+    margin-top: 15px;
+    position: relative;
+
 }
 
-.xxbq .label{
-    background: white;
+.listMark i:first-child{
+    color: rgb(0,191,255);
+}
+
+.listMark span{
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 13px;
     color: black;
     border: 1px solid rgb(0,191,255);
-    font-weight: normal;
-    border-radius: 0;
     margin-right: 10px;
     padding: 0 3px 0 3px;
-    white-space: pre-wrap;
-    /*margin-top: 30px;*/
 }
 
-.xxbq .label:first-child{
+.arrowDown{
+    position: absolute;
+    right: 15px;
+    top: 4px;
+
+}
+
+.listRight{
+    width: 24%;
+    font-size: 13px;
+}
+
+.listRight>div{
+    margin-bottom: 5px;
+}
+
+.listRight i{
+    color: rgb(0,191,255);
+}
+
+.listRight span:nth-child(2){
+    color: lightgrey;
+}
+
+.listRight button{
+    background: rgb(0,191,255);
     border: none;
-    margin-right: 0;
-}
-
-.rightLB ul li{
-    list-style: none;
-    margin-left: 10px;
-    margin-bottom: 8px;
-}
-
-.rightLB ul li span{
-    display: inline-block;
-    width: 30px;
-    height: 20px;
-    vertical-align: top;
-
-}
-
-.gxr{
-     background: url("../../../../assets/img/gxr.gif") no-repeat;
- }
-
-.lxdh{
-    background: url("../../../../assets/img/lxfs.gif") no-repeat;
-}
-
-.lssa{
-    background: url("../../../../assets/img/yssa.gif") no-repeat;
-}
-
-.zxgj{
-    background: url("../../../../assets/img/zxgj.gif") no-repeat;
-}
-
-.rightLB button{
-    border-radius: 5px;
+    padding: 4px;
+    color: white;
+    border-radius: 3px;
 }

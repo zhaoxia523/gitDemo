@@ -1,40 +1,52 @@
+.peopleClue{
+    width: 1200px;
+    margin: 0 auto;
+    /*background: pink;*/
+    /*height: 1000px;*/
+}
+
+
 
 /*人员基本信息开始*/
-.ryMessage li{
+
+
+
+.peopleBasicMessage ul li{
     border-bottom: 1px solid ghostwhite;
     list-style: none;
     margin: 10px 10px 0 0;
 }
 
-.ryMessage .rysx{
+.peopleInfoTitle{
     color: lightgrey;
 }
-.ryMessage .ryzd{
+.importPeople{
     color: red;
 }
 
-.ryMessage li h3 small{
+.peopleBasicMessage li h3 small{
     color: #00868B;
+    margin-left: 8px;
 }
-.ryMessage li h3 .ryCard{
-    margin-left: 5px;
-}
-
-.ryMessage .ryage{
-    margin-left: 90px;
+.peopleBasicMessage li h3 small span{
+    margin-left: 8px;
 }
 
-.ryMessage .ryhy{
-    margin-left: 170px;
+.ageTitle{
+    margin-left: 150px;
+}
+
+.marriageTitle{
+    margin-left: 292px;
 }
 
 /*基本信息右边图片*/
-.czrk{
+.peopleIcon{
     float: left;
     margin-right: 10px;
 }
 
-.czrk p{
+.peopleIcon p{
     margin-top: 5px;
     color: #00868B;
 }
@@ -42,39 +54,42 @@
 
 /*关系线索开始*/
 /*关系线索头*/
-.gxTitle{
+.relationClue{
     border-bottom: 1px solid whitesmoke;
     padding-bottom: 10px;
     padding-top: 10px;
 }
-.gxTitle .gx_span{
+.relationTitleLeft{
     font-weight: bold;
     vertical-align: bottom;
 }
 
-.gxTitle .gxtp_span{
+.relationTitleRight{
     font-weight: bold;
     font-size: 12px;
+    color: rgb(0,191,255);
 }
 
 /*家庭关系*/
-.gzgx{
+.familyRelation{
     border-bottom: 1px dashed whitesmoke;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
 }
 
-.jtgx_left{
+.familyRelationLeft{
     padding-top: 10px;
     border-right: 1px solid whitesmoke;
 }
 
-.gxcolor{
+.familyRelationTitle{
     color: rgb(0,191,255);
     vertical-align: bottom;
+    margin-left: 8px;
 }
 
 
-.jtgxxx .jtgxText{
+.familyDetailText{
     width: 45px;
     height: 20px;
     line-height: 20px;
@@ -82,19 +97,19 @@
     font-size: 12px;
 }
 
-.jtgxxx .gtgxpic{
+.familyDetailImage{
     width: 45px;
     height: 65px;
     position: relative;
     margin-top: 10px;
 }
 
-.jtgxxx .gtgxpic img{
+.familyDetailImage>img{
     width: 45px;
     height: 65px;
 }
 
-.jtgxxx .gtgxpic .jtgxName{
+.familyDetailName{
     background: black;
     opacity: 0.3;
     position: absolute;
@@ -106,11 +121,11 @@
 }
 
 
-.jtgx_right{
+.familyRelationRight{
     padding-top: 10px;
 }
 
-.jtgxxx ul li{
+.familyDetail ul li{
     list-style: none;
     float: left;
     margin-right: 30px;
@@ -118,36 +133,46 @@
 /*关系线索结束*/
 
 /*社交线索开始*/
-.sj{
+
+.socialCuleContent{
+    border-bottom: 1px dashed whitesmoke;
+    padding-bottom: 15px;
+}
+
+.socialCuleTtile{
+    font-weight: bold;
+    vertical-align: bottom;
+}
+.socialCule{
     font-size: 12px;
-    /*font-weight: 600;*/
     border-right: 1px solid whitesmoke;
     padding-top: 10px;
 }
 
-.sj .sj_title{
+.socialListTitle{
     color: rgb(80,172,225);
     vertical-align: middle;
+    margin-left: 5px;
 }
 
-.sj .sj_describe{
+.socialDescribe{
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-.sj .wldz{
+.wldz{
     margin-top: 5px;
 }
 
-.sj .hlw .sj_span{
+.socialSpan{
     color: gainsboro;
 }
-.zjhd ul{
+.activeTrain ul{
     margin: 10px 0 10px 0;
     background: pink;
 }
 
-.zjhd ul li{
+.activeTrain ul li{
     list-style: none;
     float: left;
     margin-right: 35px;
@@ -157,42 +182,43 @@
     background: lightgrey;
     text-align: center;
     position: relative;
-    padding-top: 3px;
+    padding-top: 5px;
+    /*line-height: 50px;*/
 }
 
-.zjhd ul li img{
-    width: 28px;
-    height: 30px;
-}
 
-.zjhd ul li .label{
+.activeTrain ul li .label{
     position: absolute;
     right: -5px;
     top: -5px;
     padding: 2px 3px 2px 3px;
 }
 
-.zjhd ul li .labelactive{
+.activeTrain ul li .labelactive{
     background: rgb(80,172,225);
 }
 
-.lxdz{
+.relationAdress{
     margin-top: 10px;
     font-size: 14px;
     margin-left: -30px;
 }
 
-.lxdz ul li{
-    list-style: none;
-    margin-top: 5px;
-    font-size: 12px;
+.relationAdressTitle{
+    margin: 15px 0 5px 0;
+}
+.relationAdressTitle>i{
+    color: rgb(80,172,225);
+}
+
+.relationAdressDetail{
+    width: 80%;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
 }
 
-
-.lxdz ul li .circle{
+.relationAdressDetail span:first-child{
     display: inline-block;
     margin-right: 10px;
     width: 5px;
@@ -202,13 +228,10 @@
     vertical-align: middle;
 }
 
-.lxdz ul li .lxdz_addr{
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+.adressDescribe{
+    margin-right: -40px;
 }
-
-.sj_right{
+.socialCuleRight{
     border-right: none;
 }
 
