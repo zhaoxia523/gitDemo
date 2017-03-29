@@ -6,12 +6,8 @@
 angular.module('app')
     .config(function ($stateProvider) {
         $stateProvider
-            .state('index.ys.renyuan.ryxs', {
+            .state('index.ryxs', {
                 url: '/ryxs',
-                views: {
-                    'main@index': {
-                        templateUrl: 'app/ryxs/ryxs.html'
-                    }
-                }
+                templateUrl: 'app/ryxs/ryxs.html'
             });
     });

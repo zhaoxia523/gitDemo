@@ -8,11 +8,8 @@ angular.module('app')
         $stateProvider
             .state('index.ys', {
                 url: '/ys',
-                views: {
-                    'main@index': {
-                        templateUrl: 'app/yunsuo/yunsuo.html'
-                    }
-                }
+                templateUrl: 'app/yunsuo/yunsuo.html',
+                controller: 'yunsuoCtrl'
             })
             .state('index.ys.renyuan',{
                 url : '/renyuan',
