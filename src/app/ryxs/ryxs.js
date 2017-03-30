@@ -7,7 +7,7 @@ angular.module('app')
     .config(function ($stateProvider) {
         $stateProvider
             .state('index.ryxs', {
-                url: '/ryxs',
+                url: '/ryxs/:id',
                 templateUrl: 'app/ryxs/ryxs.html'
             });
     });
