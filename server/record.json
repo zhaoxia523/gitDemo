@@ -1,4 +1,6 @@
 {
+  "resultCount": 2,
+  "time": "335ms",
   "basicInfos": [
     {
       "ry_img": "../src/assets/img/11.gif",
@@ -161,7 +163,7 @@
       ]
     },
     {
-      "ry_img": "assets/img/11.gif",
+      "ry_img": "assets/img/2.png",
       "ry_name": "徐本跃",
       "ry_sex": "男",
       "ry_card": "52242819850212001X",

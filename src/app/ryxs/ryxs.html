@@ -1,42 +1,31 @@
 <div class="peopleClue">
     <div class="peopleMessage">
         <div class="col-sm-2 peopleImage">
-            <img src="assets/img/rytx.gif" alt=""/>
+            <img ng-src="{{person.icon}}"  alt=""/>
         </div>
         <div class="col-sm-6 peopleBasicMessage">
             <ul>
                 <li>
-                    <h3>王叶飞
-                        <small>汉族<span>52012319910928301X</span></small>
+                    <h3>{{person.name}}
+                        <small>{{person.nation}}<span>{{person.card}}</span></small>
                     </h3>
                 </li>
-                <li><span class="peopleInfoTitle">曾用名: 无</span><span class="peopleInfoTitle ageTitle">年龄:</span> 25<span
-                        class="peopleInfoTitle ageTitle">性别:</span> 男
+                <li><span class="peopleInfoTitle">曾用名: {{person.oldname}}</span><span class="peopleInfoTitle ageTitle">年龄:</span> {{person.age}}<span
+                        class="peopleInfoTitle ageTitle">性别:</span> {{person.sex}}
                 </li>
-                <li><span class="peopleInfoTitle">电话:</span> 15089001984<span
-                        class="peopleInfoTitle marriageTitle">婚姻:</span> 未婚 <span
+                <li><span class="peopleInfoTitle">电话:</span> {{person.phone}}<span
+                        class="peopleInfoTitle marriageTitle">婚姻:</span> {{person.marriage}} <span
                         class="peopleInfoTitle">(常口)</span>
                 </li>
-                <li><span class="peopleInfoTitle">户籍地址:</span> 贵州省修文县清水村三组</li>
-                <li><span class="peopleInfoTitle">现住地:</span> 贵州省修文县清水村三组</li>
-                <li class="importPeople"><span>重点人员:</span> 是</li>
+                <li><span class="peopleInfoTitle">户籍地址:</span> {{person.hjadress}}</li>
+                <li><span class="peopleInfoTitle">现住地:</span> {{person.xzadress}}</li>
+                <li class="importPeople"><span>重点人员:</span> {{person.import}}</li>
             </ul>
         </div>
         <div class="col-sm-4">
-            <div class="peopleIcon">
-                <img src="assets/img/czrk1.gif" alt=""/>
-
-                <p>常住人口</p>
-            </div>
-            <div class="peopleIcon">
-                <img src="assets/img/czrk1.gif" alt=""/>
-
-                <p>常住人口</p>
-            </div>
-            <div class="peopleIcon">
-                <img src="assets/img/czrk1.gif" alt=""/>
-
-                <p>常住人口</p>
+            <div class="peopleIcon" ng-repeat="picInfo in picInfos">
+                <img ng-src="{{picInfo.pic}}"/>
+                <p>{{picInfo.des}}</p>
             </div>
         </div>
     </div>
@@ -54,13 +43,13 @@
                 <span class="familyRelationTitle">家庭关系</span>
 
                 <div class="familyDetail">
-                    <ul>
+                    <ul  ng-repeat="familyRelation in familyRelations">
                         <li>
                             <div class="familyDetailImage">
-                                <img src="assets/img/error.jpg" alt="">
-                                <span class="familyDetailName familyDetailText">王丽</span>
+                                <img ng-src="{{familyRelation.pic}}">
+                                <span class="familyDetailName familyDetailText">{{familyRelation.name}}</span>
                             </div>
-                            <p class="familyDetailText">女</p>
+                            <p class="familyDetailText">{{familyRelation.sex}}</p>
                         </li>
                     </ul>
                 </div>
@@ -72,27 +61,13 @@
                     <span class="familyRelationTitle">亲密联系人</span>
                 </div>
                 <div class="familyDetail">
-                    <ul>
+                    <ul ng-repeat="closeContact in closeContacts">
                         <li>
                             <div class="familyDetailImage">
-                                <img src="assets/img/error.jpg" alt="">
-                                <span class="familyDetailName familyDetailText">王丽</span>
+                                <img ng-src="{{closeContact.pic}}">
+                                <span class="familyDetailName familyDetailText">{{closeContact.name}}</span>
                             </div>
-                            <p class="familyDetailText">同网吧</p>
-                        </li>
-                        <li>
-                            <div class="familyDetailImage">
-                                <img src="assets/img/error.jpg" alt="">
-                                <span class="familyDetailName familyDetailText">王丽</span>
-                            </div>
-                            <p class="familyDetailText">同网吧</p>
-                        </li>
-                        <li>
-                            <div class="familyDetailImage">
-                                <img src="assets/img/error.jpg" alt="">
-                                <span class="familyDetailName familyDetailText">王丽</span>
-                            </div>
-                            <p class="familyDetailText">同网吧</p>
+                            <p class="familyDetailText">{{closeContact.source}}</p>
                         </li>
                     </ul>
                 </div>
@@ -107,17 +82,16 @@
                 <span class="socialCuleTtile">社交线索</span>
             </div>
             <div class="col-sm-3 socialCule socialCuleLeft">
-                <div class="tx">
+                <div>
                     <i class="fa fa-phone"></i>
                     <span class="socialListTitle">通讯</span>
-
-                    <p class="socialDescribe">暂无通讯录</p>
+                    <p class="socialDescribe">{{communicate.tx}}</p>
                 </div>
-                <div class="txxx">
+                <div>
                     <i class="fa fa-phone"></i>
                     <span class="socialListTitle">通讯信息</span>
 
-                    <p class="socialDescribe">电话: 150086011943 &nbsp<span><i class="fa fa-location-arrow"></i> 来源: 常口信息</span>
+                    <p class="socialDescribe">{{communicate.txMessage}} &nbsp<span><i class="fa fa-location-arrow"></i> 来源: {{communicate.come}}</span>
                     </p>
                 </div>
             </div>
@@ -126,14 +100,14 @@
                     <i class="fa fa-desktop"></i>
                     <span class="socialListTitle">互联网信息(来源于i搜)</span>
 
-                    <p class="socialDescribe"><span class="socialSpan">邮箱:</span> 暂无数据</p>
+                    <p class="socialDescribe"><span class="socialSpan">邮箱:</span> {{internetMessage.email}}</p>
 
-                    <p class="socialDescribe"><span class="socialSpan">网名:</span> 暂无数据</p>
+                    <p class="socialDescribe"><span class="socialSpan">网名:</span> {{internetMessage.screenName}}</p>
 
-                    <p class="socialDescribe"><span class="socialSpan">电话号码:</span> 暂无数据</p>
+                    <p class="socialDescribe"><span class="socialSpan">电话号码:</span> {{internetMessage.phone}}</p>
                     <span class="socialSpan">物流地址:</span>
 
-                    <p class="socialDescribe wldz">贵州省修文县长镇清水村3组(96%)</p>
+                    <p class="socialDescribe wldz">{{internetMessage.wladress}}</p>
                 </div>
             </div>
             <div class="col-sm-6 socialCule socialCuleRight">
@@ -144,33 +118,28 @@
                         <ul>
                             <li>
                                 <i class="fa fa-train fa-2x"></i>
-
                                 <p>火车</p>
-                                <span class="label label-default">0</span>
+                                <span class="label label-default" show-active-color>{{recentActTra.trainTimes}}</span>
                             </li>
                             <li>
                                 <i class="fa fa-car fa-2x"></i>
-
                                 <p>客运</p>
-                                <span class="label label-default">0</span>
+                                <span class="label label-default" show-active-color>{{recentActTra.carTimes}}</span>
                             </li>
                             <li>
                                 <i class="fa fa-hotel fa-2x"></i>
-
                                 <p>旅馆</p>
-                                <span class="label label-default">0</span>
+                                <span class="label label-default" show-active-color>{{recentActTra.hotelTimes}}</span>
                             </li>
                             <li>
                                 <i class="fa fa-plane fa-2x"></i>
-
                                 <p>民航</p>
-                                <span class="label label-default">0</span>
+                                <span class="label label-default" show-active-color>{{recentActTra.planeTimes}}</span>
                             </li>
                             <li>
                                 <i class="fa fa-desktop fa-2x"></i>
-
                                 <p>上网</p>
-                                <span class="label label-default">100</span>
+                                <span class="label label-default" show-active-color>{{recentActTra.internetTimes}}</span>
                             </li>
                         </ul>
                     </div>
@@ -181,12 +150,12 @@
                         <i class="fa fa-user"></i>
                         <span>联系地址</span>
                     </div>
-                    <div class="col-sm-12">
+                    <div class="col-sm-12" ng-repeat="contactAdre in contactAdress">
                         <div class="relationAdressDetail pull-left">
-                            <span></span><span>贵州省贵阳市花溪区平桥社区服务中心无尽居委会清三委会清三委会清</span>
+                            <span></span><span>{{contactAdre.adress}}</span>
                         </div>
                         <div class="pull-right adressDescribe">
-                            <span>实有人口居住证</span>
+                            <span>{{contactAdre.status}}</span>
                         </div>
                     </div>
                 </div>

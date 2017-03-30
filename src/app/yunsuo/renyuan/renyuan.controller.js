@@ -3,18 +3,14 @@
  */
 'use strict';
 angular.module('app')
-    .controller('renyuanCtrl',['$scope','$http','$state', function ($scope,$http,$state) {
-    $http.get('../server/record.json').success(function (data) {
-        console.log(data);
-        $scope.basicInfos = data.basicInfos;
-        //$scope.basicInfos.records = data.basicInfos.records;
+    .controller('renyuanCtrl', ['$scope','$state', 'renyuanSer', function ($scope,$state, renyuanSer) {
 
-    });
-
-    // $scope.searchDetail = function(){
-    //     $state.go('index.ys.renyuan');
-    // };
-    $scope.goToryxs = function(){
-        $state.go('index.ryxs');
-    }
-}]);
+        renyuanSer.getData().then(function (data) {
+            $scope.resultCount = data.resultCount;
+            $scope.time = data.time;
+            $scope.basicInfos = data.basicInfos;
+        });
+        $scope.goToryxs = function () {
+            $state.go('index.ryxs');
+        }
+    }]);

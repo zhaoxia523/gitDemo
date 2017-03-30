@@ -8,7 +8,10 @@ angular.module('app')
         $stateProvider
             .state('index', {
                 url: '/index',
-                templateUrl: 'app/main/main.html'
+                templateUrl: 'app/main/main.html',
+                controller: function ($scope) {
+                    $scope.title = "首页"
+                }
             })
 
             .state('index.message', {

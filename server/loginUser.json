@@ -1,5 +1,6 @@
 {
-"userName" : "张三",
-"messgaeCount" : 5,
-"ryCount" : 3
+  "name": "张三",
+  "messgaeCount": 5,
+  "ryCount": 3,
+  "img": "assets/img/dlp.gif"
 }

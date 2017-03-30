@@ -5,11 +5,17 @@
     /*height: 1000px;*/
 }
 
+.peopleMessage{
+    margin-top: 10px;
+}
 
+.peopleImage img{
+    width: 120px;
+    height: 150px;
+    margin-top: 15px;
+}
 
 /*人员基本信息开始*/
-
-
 
 .peopleBasicMessage ul li{
     border-bottom: 1px solid ghostwhite;
@@ -128,7 +134,7 @@
 .familyDetail ul li{
     list-style: none;
     float: left;
-    margin-right: 30px;
+    margin-right: 35px;
 }
 /*关系线索结束*/
 
