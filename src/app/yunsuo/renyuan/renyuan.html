@@ -1,7 +1,7 @@
 <!--查询的信息结果-->
 <div class="queryList">
     <div class="queryTitle">
-        <p>为您找到相关结果<span> {{cx.count}} </span>个，耗时<span> {{cx.time}} </span></p>
+        <p>为您找到相关结果<span> {{resultCount}} </span>个，耗时<span> {{time}} </span></p>
     </div>
 
     <div class="queryContent" ng-repeat="basicInfo in basicInfos">
@@ -56,7 +56,7 @@
                 <span>最新轨迹:</span>
                 <span>{{basicInfo.ry_latest_track}}</span>
             </div>
-            <button class="pull-right" ng-click="goToryxs()">人员线索</button>
+            <button class="pull-right" ui-sref="index.ryxs({id:basicInfo.ry_id})">人员线索</button>
         </div>
 
         <div class="clearfix"></div>

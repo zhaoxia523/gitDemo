@@ -1,9 +1,9 @@
 {
-  "detail_ryxs": {
-    "detail_pic": "..",
-    "name": "王叶飞",
+  "person": {
+    "icon": "../src/assets/img/11.gif",
+    "name": "赵本六",
     "nation": "汉族",
-    "card": "52012319910928301X",
+    "card": "522525197104248000",
     "oldname": "无",
     "age": "25",
     "sex": "男",
@@ -12,104 +12,109 @@
     "hjadress": "贵州省修文县清水村三组",
     "xzadress": "贵州省修文县清水村三组",
     "import": "是",
-    "pics": [
+    "picInfos": [
       {
-        "pic": "..",
+        "pic": "../src/assets/img/czrk1.gif",
         "des": "常住人口"
       },
       {
-        "pic": "..",
+        "pic": "../src/assets/img/czrk1.gif",
         "des": "常住人口"
       },
       {
-        "pic": "..",
+        "pic": "../src/assets/img/czrk1.gif",
         "des": "常住人口"
       },
       {
-        "pic": "..",
+        "pic": "../src/assets/img/czrk1.gif",
         "des": "常住人口"
       },
       {
-        "pic": "..",
+        "pic": "../src/assets/img/czrk1.gif",
         "des": "常住人口"
       },
       {
-        "pic": "..",
+        "pic": "../src/assets/img/czrk1.gif",
         "des": "常住人口"
       }
     ]
   },
-  "family_ties": [
+  "familyRelations": [
     {
-      "name": "王丽娟",
+      "name": "王娟",
       "sex ": "女",
-      "pic": ".."
+      "pic": "../src/assets/img/error.jpg"
+    },
+    {
+      "name": "李四",
+      "sex ": "男",
+      "pic": "../src/assets/img/error.jpg"
     },
     {
       "name": "王丽娟",
       "sex ": "女",
-      "pic": ".."
-    },
-    {
-      "name": "王丽娟",
-      "sex ": "女",
-      "pic": ".."
+      "pic": "../src/assets/img/error.jpg"
     }
   ],
-  "close_contacts": [
+  "closeContacts": [
     {
       "name": "王丽娟",
       "source": "同网吧",
-      "pic": ".."
+      "pic": "../src/assets/img/error.jpg"
+    },
+    {
+      "name": "张珊珊",
+      "source": "同网吧",
+      "pic": "../src/assets/img/error.jpg"
+    },
+    {
+      "name": "张珊珊",
+      "source": "同网吧",
+      "pic": "../src/assets/img/error.jpg"
+    },
+    {
+      "name": "李思",
+      "source": "同网吧",
+      "pic": "../src/assets/img/error.jpg"
+    },
+    {
+      "name": "王认得",
+      "source": "同网吧",
+      "pic": "../src/assets/img/error.jpg"
     },
     {
       "name": "王丽娟",
       "source": "同网吧",
-      "pic": ".."
+      "pic": "../src/assets/img/error.jpg"
+    },
+    {
+      "name": "王哦娟",
+      "source": "同网吧",
+      "pic": "../src/assets/img/error.jpg"
+    },
+    {
+      "name": "王留发",
+      "source": "同网吧",
+      "pic": "../src/assets/img/error.jpg"
     },
     {
       "name": "王丽娟",
       "source": "同网吧",
-      "pic": ".."
+      "pic": "../src/assets/img/error.jpg"
     },
     {
       "name": "王丽娟",
       "source": "同网吧",
-      "pic": ".."
+      "pic": "../src/assets/img/error.jpg"
     },
     {
       "name": "王丽娟",
       "source": "同网吧",
-      "pic": ".."
-    },
-    {
-      "name": "王丽娟",
-      "source": "同网吧",
-      "pic": ".."
-    },
-    {
-      "name": "王丽娟",
-      "source": "同网吧",
-      "pic": ".."
-    },
-    {
-      "name": "王丽娟",
-      "source": "同网吧",
-      "pic": ".."
-    },
-    {
-      "name": "王丽娟",
-      "source": "同网吧",
-      "pic": ".."
-    },
-    {
-      "name": "王丽娟",
-      "source": "同网吧",
-      "pic": ".."
+      "pic": "../src/assets/img/error.jpg"
     }
   ],
   "social_cue": {
-    "tongxun": {
+    "communicate": {
       "tx": "暂无通讯录",
       "txMessage": "电话: 150086011943",
       "come": "常口信息"
@@ -123,7 +128,7 @@
     "recentActTra": {
       "trainTimes": 0,
       "carTimes": 5,
-      "hotelTimes": 0,
+      "hotelTimes": 34,
       "planeTimes": 0,
       "internetTimes": 264,
       "contactAdress": [

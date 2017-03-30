@@ -5,7 +5,7 @@
     margin: 0 auto;
     text-align: center;
 }
-/*ÓÒ±ßµÄtitle*/
+/*×ó±ßµÄtitle*/
 .topNav_left span:nth-child(2) {
     color: red;
     margin-left: 15px;
@@ -19,15 +19,19 @@
     margin-left: 5px;
 }
 
-/*µ¼º½×ó±ß*/
+/*µ¼º½ÓÒ±ß*/
 .topNav_right .nav_span{
     margin-right: 15px;
 }
 
 .topNav_right i{
-    font-size: 18px;
+    /*font-size: 18px;*/
+    /*color: lightgrey;*/
+}
+.topNav_right .activeNav {
     color: rgb(80,172,225);
 }
+
 
 .topNav_right .badge{
     background-color: rgb(80,172,225);
@@ -36,6 +40,8 @@
 }
 
 .topNav_right a{
+    font-size: 18px;
+    color: lightgrey;
     text-decoration: none;
 }
 

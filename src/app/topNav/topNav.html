@@ -5,26 +5,26 @@
     </div>
     <div class="topNav_right pull-right" ng-controller="mainCtrl">
         <span class="nav_span">
-            <a ui-sref="index">
-                <i class="fa fa-home navicon"></i>
+            <a ui-sref="index" ui-sref-active="activeNav">
+                <i class="fa fa-home"></i>
             </a>
         </span>
         <span class="nav_span">
-            <a ui-sref="index.message">
-                <i class="fa fa-bell navicon"></i>
-                <span class="badge">{{messgaeCount}}</span>
+            <a ui-sref="index.message" ui-sref-active="activeNav">
+                <i class="fa fa-bell"></i>
+                <span class="badge" ng-hide="isActive == !isActive">{{user.messgaeCount}}</span>
             </a>
         </span>
         <span class="nav_span">
-            <a ui-sref="index.perInformation">
-                <i class="fa fa-user navicon"></i>
-                <span class="badge">{{ryCount}}</span>
+            <a ui-sref="index.perInformation" ui-sref-active="activeNav">
+                <i class="fa fa-user"></i>
+                <span class="badge" ng-hide="isActive == !isActive">{{user.ryCount}}</span>
             </a>
         </span>
         <span class="nav_span">
             <a ui-sref="index.perSetting">
-                <span class="user_name">{{userName}}</span>
-                <img src="assets/img/dlp.gif"/>
+                <span class="user_name">{{user.name}}</span>
+                <img ng-src="{{user.img}}"/>
             </a>
         </span>
     </div>

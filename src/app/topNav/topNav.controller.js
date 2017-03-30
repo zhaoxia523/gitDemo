@@ -3,10 +3,9 @@
  */
 'use strict';
 angular.module('app')
-    .controller('mainCtrl', ['$scope', '$http', function ($scope, $http) {
-        $http.get('../server/loginUser.json').success(function (data) {
-            $scope.messgaeCount = data.messgaeCount;
-            $scope.ryCount = data.ryCount;
-            $scope.userName = data.userName;
-        });
+    .controller('mainCtrl', ['$scope','userSer', function ($scope,userSer) {
+        $scope.isActive = true;
+        userSer.getData().then(function (data) {
+            $scope.user = data;
+        })
     }]);

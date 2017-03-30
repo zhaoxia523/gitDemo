@@ -8,6 +8,7 @@ angular.module('app')
         $stateProvider
             .state('index.ryxs', {
                 url: '/ryxs/:id',
-                templateUrl: 'app/ryxs/ryxs.html'
+                templateUrl: 'app/ryxs/ryxs.html',
+                controller:"personCtrl"
             });
     });

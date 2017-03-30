@@ -5,6 +5,10 @@
     margin-bottom: 25px;
 }
 
+.queryTitle p span{
+    color: rgb(80,172,225);
+}
+
 .queryContent{
     border-bottom: 1px solid lightgrey;
     margin-bottom: 15px;
