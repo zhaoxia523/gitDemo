@@ -1,0 +1,22 @@
+[
+  {
+    "cloudType": "综合",
+    "typeIcon": "fa-th-large"
+  },
+  {
+    "cloudType": "人员",
+    "typeIcon": "fa-user"
+  },
+  {
+    "cloudType": "案件",
+    "typeIcon": "fa-bomb"
+  },
+  {
+    "cloudType": "地址",
+    "typeIcon": "fa-map-marker"
+  },
+  {
+    "cloudType": "通讯",
+    "typeIcon": "fa-phone"
+  }
+]

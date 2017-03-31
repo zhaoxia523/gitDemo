@@ -26,6 +26,10 @@
     margin: 10px;
 }
 
+.searchActive{
+    color: rgb(80,172,225);
+}
+
 .searchInput>input{
     width: 650px;
     height: 40px;

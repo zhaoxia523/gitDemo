@@ -5,7 +5,7 @@
 angular.module('app')
     .controller('personCtrl', ['$scope','$stateParams','personSer', function ($scope,$stateParams, personSer) {
 
-        personSer.getData().then(function (data) {
+        personSer.getDetailData().then(function (data) {
             //console.log(data);
             $scope.person = data.person;
             $scope.picInfos = data.person.picInfos;

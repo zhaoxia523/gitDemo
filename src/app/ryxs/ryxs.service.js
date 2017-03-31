@@ -4,7 +4,7 @@
 'use strict';
 angular.module('app')
     .service('personSer', ['$http', '$q', function ($http, $q) {
-        this.getData = function (params) {
+        this.getDetailData = function (params) {
             var d = $q.defer();
             $http({
                 method: 'GET',

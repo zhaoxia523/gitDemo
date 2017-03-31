@@ -4,15 +4,15 @@
     line-height: 35px;
 }
 
-.midNav .midNavContent{
+.midNavContent{
     width: 1200px;
     margin: 0 auto;
     position: relative;
 }
-.midNav .midNavContent i{
+.midNavContent i{
     margin-left: -165px;
 }
-.midNav .midNavContent .backBtn{
+.backBtn{
     position: absolute;
     right: 80px
 }
@@ -21,6 +21,9 @@
     list-style: none;
     width: 100px;
     height: 35px;
+    position: absolute;
+    right: 0;
+    top:0;
 }
 
 .rightColorIcon ul li {

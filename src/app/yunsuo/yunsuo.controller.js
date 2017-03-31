@@ -3,7 +3,7 @@
  */
 'use strict';
 angular.module('app')
-    .controller('yunsuoCtrl',['$scope','$http','$state', function ($scope,$http,$state) {
+    .controller('yunsuoCtrl',['$scope','$http','$state','yunsuoSer', function ($scope,$http,$state,yunsuoSer) {
         // $http.get('../server/record.json').success(function (data) {
         //     console.log(data);
         //     $scope.basicInfos = data.basicInfos;
@@ -17,4 +17,13 @@ angular.module('app')
         // $scope.goToryxs = function(){
         //     $state.go('index.ryxs');
         // }
+
+        $scope.showActive = function (index) {
+            $scope.isActive = index;
+        }
+
+        yunsuoSer.getYunsuoNav().then(function (data) {
+            $scope.searchTypes = data;
+            console.log(data);
+        })
     }]);

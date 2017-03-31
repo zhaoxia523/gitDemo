@@ -5,7 +5,7 @@
 angular.module('app')
     .controller('renyuanCtrl', ['$scope','$state', 'renyuanSer', function ($scope,$state, renyuanSer) {
 
-        renyuanSer.getData().then(function (data) {
+        renyuanSer.getRecordData().then(function (data) {
             $scope.resultCount = data.resultCount;
             $scope.time = data.time;
             $scope.basicInfos = data.basicInfos;
