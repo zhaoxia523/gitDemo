@@ -6,13 +6,13 @@
         <div class="pull-left">
             <div class="search">
                 <div class="searchNav">
-                    <span class="searchSpan" ng-repeat="searchType in searchTypes" ng-click="showActive()">
-                        <i class="fa {{searchType.typeIcon}}" ng-class="{true:'searchActive',false:''}[isActive]"></i>
-                        <span ng-bind="searchType.cloudType" ng-class="{true:'searchActive',false:''}[isActive]"></span>
+                    <span class="searchSpan" ng-repeat="searchType in searchTypes" ng-click="isSelected($index,searchType.name)">
+                        <i class="fa {{searchType.typeIcon}}" ng-class="{true:'searchActive',false:''}[isActive($index)]"></i>
+                        <span ng-bind="searchType.cloudType" ng-class="{true:'searchActive',false:''}[isActive($index)]"></span>
                     </span>
                 </div>
                 <div class="searchInput">
-                    <input type="text" placeholder="请输入关键字">
+                    <input type="text" placeholder="请输入关键字" ng-model="inputContent">
                     <button ng-click="searchDetail()"><i class="fa fa-search fa-lg fa-inverse"></i></button>
                 </div>
                 <div class="searchCheckBox">

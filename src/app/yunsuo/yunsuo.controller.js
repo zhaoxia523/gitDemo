@@ -4,16 +4,16 @@
 'use strict';
 angular.module('app')
     .controller('yunsuoCtrl',['$scope','$http','$state','yunsuoSer', function ($scope,$http,$state,yunsuoSer) {
-        // $http.get('../server/record.json').success(function (data) {
-        //     console.log(data);
-        //     $scope.basicInfos = data.basicInfos;
-        //     //$scope.basicInfos.records = data.basicInfos.records;
-        //
-        // });
-
+        $scope.inputContent = '';
         $scope.searchDetail = function(){
-            $state.go('index.ys.renyuan');
+            if($scope.inputContent == ''){
+                return false;
+            }else{
+                $state.go('index.ys.person');
+            }
+
         };
+
         // $scope.goToryxs = function(){
         //     $state.go('index.ryxs');
         // }
@@ -25,5 +25,20 @@ angular.module('app')
         yunsuoSer.getYunsuoNav().then(function (data) {
             $scope.searchTypes = data;
             console.log(data);
-        })
+        });
+
+
+        $scope.seleIndex = '0';
+        $scope.isSelected = function (index,name) {
+            $scope.seleIndex = index;
+            $state.go("index.ys."+ name);
+        };
+
+        $scope.isActive = function (index) {
+            if($scope.seleIndex == index){
+                return true;
+            }else{
+                return false;
+            }
+        }
     }]);

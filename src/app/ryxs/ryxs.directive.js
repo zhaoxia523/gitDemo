@@ -9,7 +9,6 @@ angular.module('app')
             //scope:{},
             link: function (scope, ele, attr) {
                 $timeout(function () {
-                    console.log(ele.text());
                     if (ele.text() != '0') {
                         ele.css('background', 'rgb(80,172,225)');
                     }
