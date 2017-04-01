@@ -9,7 +9,7 @@
             <div class="listImg pull-left">
                 <img ng-src="{{basicInfo.ry_img}}"/>
             </div>
-            <div class="listContent pull-left">
+            <div class="listContent pull-left" show-more-mark fa-icon="isShowMoreRecord" height="100">
                 <div class="listBasic">
                     <span>{{basicInfo.ry_name}}</span>
                     <span>{{basicInfo.ry_sex}}</span>
@@ -17,7 +17,7 @@
                     <span>出生日期：{{basicInfo.ry_birth}}</span>
                     <span>籍贯：{{basicInfo.ry_ancestral}}</span>
                 </div>
-                <div class="listDetail" ng-repeat="record in basicInfo.records">
+                <div class="listDetail" ng-repeat="record in basicInfo.records" >
                     <div class="pull-left sourceTable" >
                         <span></span>
                         <span>{{record.record_title}}({{record.record_number}})</span>
@@ -26,13 +26,13 @@
                         <span>{{record.record_describe}}</span>
                     </div>
                 </div>
-                <i class="fa fa-chevron-down" ng-show="basicInfo.records.length>3"></i>
+                <i class="fa" ng-class="{true:'fa-chevron-up',false:'fa-chevron-down'}[isShowMoreRecord]" ng-click="isShowMoreRecord = !isShowMoreRecord"></i>
             </div>
             <div class="clearfix"></div>
-            <div class="listMark" >
+            <div class="listMark" show-more-mark fa-icon="isShowMoreMark" height="25">
                 <i class="fa fa-tag"></i>
                 <span ng-repeat="tag in basicInfo.tags">{{tag.tag}}</span>
-                <i class="fa fa-chevron-down arrowDown"></i>
+                <i class="fa fa-chevron-down arrowDown" ng-class="{true:'fa-chevron-up',false:'fa-chevron-down'}[isShowMoreMark]" ng-click="isShowMoreMark = !isShowMoreMark"></i>
             </div>
         </div>
         <div class="listRight pull-right">

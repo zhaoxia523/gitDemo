@@ -20,17 +20,19 @@ angular.module('app')
 
         $scope.showActive = function (index) {
             $scope.isActive = index;
-        }
+        };
 
         yunsuoSer.getYunsuoNav().then(function (data) {
             $scope.searchTypes = data;
-            console.log(data);
         });
 
 
         $scope.seleIndex = '0';
         $scope.isSelected = function (index,name) {
             $scope.seleIndex = index;
+            if($scope.inputContent == ''){
+                return false;
+            }
             $state.go("index.ys."+ name);
         };
 
