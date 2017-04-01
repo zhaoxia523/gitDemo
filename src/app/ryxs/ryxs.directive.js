@@ -13,7 +13,7 @@ angular.module('app')
                     if (ele.text() != '0') {
                         ele.css('background', 'rgb(80,172,225)');
                     }
-                },100);
+                },50);
 
             }
         }

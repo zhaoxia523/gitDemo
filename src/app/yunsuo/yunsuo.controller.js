@@ -20,7 +20,7 @@ angular.module('app')
 
         $scope.showActive = function (index) {
             $scope.isActive = index;
-        }
+        };
 
         yunsuoSer.getYunsuoNav().then(function (data) {
             $scope.searchTypes = data;
