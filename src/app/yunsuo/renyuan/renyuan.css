@@ -14,6 +14,10 @@
     margin-bottom: 15px;
 }
 
+.queryColor{
+    background:lightgray;
+}
+
 .listLeft{
     width: 75%;
     border-right: 2px solid rgb(80,172,225);
@@ -54,7 +58,7 @@
     margin-top: 5px;
 }
 
-.listDetail .sourceTable span:first-child{
+.sourceTable span:first-child{
     display: inline-block;
     margin-right: 5px;
     width: 5px;
@@ -64,12 +68,20 @@
     vertical-align: middle;
 }
 
+.listContent>i{
+    cursor: pointer;
+}
+
 .detail{
     width: 64%;
     white-space: nowrap;
     text-overflow:ellipsis;
     overflow: hidden;
     margin-top: 5px;
+}
+
+.highlightedText{
+    color: red;
 }
 
 .listContent>i{

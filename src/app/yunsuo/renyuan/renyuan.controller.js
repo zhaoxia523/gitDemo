@@ -5,12 +5,14 @@
 angular.module('app')
     .controller('renyuanCtrl', ['$scope','$state', 'renyuanSer', function ($scope,$state, renyuanSer) {
 
-        renyuanSer.getRecordData().then(function (data) {
+        
+        $scope.$on('inputCon', function (e,d) {
+            $scope.content = d;
+        });
+        renyuanSer.getRecordData($scope.content).then(function (data) {
             $scope.resultCount = data.resultCount;
             $scope.time = data.time;
             $scope.basicInfos = data.basicInfos;
         });
-        // $scope.goToryxs = function () {
-        //     $state.go('index.ryxs',{id:$scope.basicInfo.ry_id});
-        // }
+
     }]);

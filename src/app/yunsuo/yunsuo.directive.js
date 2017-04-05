@@ -14,7 +14,6 @@ angular.module('app')
             $timeout(function () {
                 scope.faIcon = false;
                 var height = ele.innerHeight();
-                console.log(height);
                 scope.$watch('faIcon', function (newVal) {
                     if(newVal){
                         ele.height(height);

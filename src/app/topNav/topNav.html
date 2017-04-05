@@ -3,26 +3,26 @@
         <img src="assets/img/logo38.png"/>
         <span>情报<span> 数智通</span></span>
     </div>
-    <div class="topNav_right pull-right" ng-controller="mainCtrl">
+    <div class="topNav_right pull-right" ng-controller="navTopCtrl">
         <span class="nav_span">
             <a ui-sref="index" ui-sref-active="activeNav">
                 <i class="fa fa-home"></i>
             </a>
         </span>
         <span class="nav_span">
-            <a ui-sref="index.message" ui-sref-active="activeNav">
+            <a ui-sref="message" ui-sref-active="activeNav">
                 <i class="fa fa-bell"></i>
-                <span class="badge" ng-hide="isActive == !isActive">{{user.messgaeCount}}</span>
+                <span class="badge">{{user.messgaeCount}}</span>
             </a>
         </span>
         <span class="nav_span">
-            <a ui-sref="index.perInformation" ui-sref-active="activeNav">
+            <a ui-sref="perInformation" ui-sref-active="activeNav">
                 <i class="fa fa-user"></i>
-                <span class="badge" ng-hide="isActive == !isActive">{{user.ryCount}}</span>
+                <span class="badge">{{user.ryCount}}</span>
             </a>
         </span>
         <span class="nav_span">
-            <a ui-sref="index.perSetting">
+            <a ui-sref="perSetting">
                 <span class="user_name">{{user.name}}</span>
                 <img ng-src="{{user.img}}"/>
             </a>

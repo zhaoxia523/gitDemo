@@ -3,43 +3,34 @@
  */
 'use strict';
 angular.module('app')
-    .controller('yunsuoCtrl',['$scope','$http','$state','yunsuoSer', function ($scope,$http,$state,yunsuoSer) {
-        $scope.inputContent = '';
-        $scope.searchDetail = function(){
-            if($scope.inputContent == ''){
-                return false;
-            }else{
-                $state.go('index.ys.person');
-            }
-
-        };
-
-        // $scope.goToryxs = function(){
-        //     $state.go('index.ryxs');
-        // }
-
-        $scope.showActive = function (index) {
-            $scope.isActive = index;
-        };
+    .controller('yunsuoCtrl', ['$scope', '$http', '$state', 'yunsuoSer','renyuanSer', function ($scope, $http, $state, yunsuoSer,renyuanSer) {
 
         yunsuoSer.getYunsuoNav().then(function (data) {
             $scope.searchTypes = data;
         });
 
+        $scope.inputContent = '';
+        $scope.searchDetail = function () {
+            $scope.$broadcast('inputCon',$scope.inputContent);
+            renyuanSer.getRecordData($scope.inputContent).then(function (data) {
+                $state.go('index.ys.person');
+            });
+        };
+
 
         $scope.seleIndex = '0';
-        $scope.isSelected = function (index,name) {
+        $scope.isSelected = function (index, name) {
             $scope.seleIndex = index;
-            if($scope.inputContent == ''){
+            if ($scope.inputContent == '') {
                 return false;
             }
-            $state.go("index.ys."+ name);
+            $state.go("index.ys." + name);
         };
 
         $scope.isActive = function (index) {
-            if($scope.seleIndex == index){
+            if ($scope.seleIndex == index) {
                 return true;
-            }else{
+            } else {
                 return false;
             }
         }

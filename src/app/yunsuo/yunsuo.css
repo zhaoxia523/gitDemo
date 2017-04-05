@@ -24,6 +24,7 @@
 }
 .searchSpan{
     margin: 10px;
+    cursor: pointer;
 }
 
 .searchActive{
@@ -47,4 +48,8 @@
     border: none;
     margin-left: -5px;
     border-radius: 0 5px 5px 0;
+}
+
+.searchCheckBox>span{
+    vertical-align: top;
 }

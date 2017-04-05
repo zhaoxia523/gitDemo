@@ -24,10 +24,6 @@
     margin-right: 15px;
 }
 
-.topNav_right i{
-    /*font-size: 18px;*/
-    /*color: lightgrey;*/
-}
 .topNav_right .activeNav {
     color: rgb(80,172,225);
 }

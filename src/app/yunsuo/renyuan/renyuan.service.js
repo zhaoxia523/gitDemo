@@ -4,9 +4,9 @@
 'use strict';
 angular.module('app')
     .service('renyuanSer', ['$http','$q',function($http,$q){
-        this.getRecordData = function(){
+        this.getRecordData = function(inputContent){
             var d = $q.defer();
-            $http.get('../server/record.json')
+            $http.get('../server/record.json?content=' + inputContent)
                 .success(function(response){
                     d.resolve(response);
                 })

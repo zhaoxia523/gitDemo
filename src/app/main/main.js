@@ -8,23 +8,20 @@ angular.module('app')
         $stateProvider
             .state('index', {
                 url: '/index',
-                templateUrl: 'app/main/main.html',
-                controller: function ($scope) {
-                    $scope.title = "首页"
-                }
+                templateUrl: 'app/main/home/home.html',
             })
 
-            .state('index.message', {
+            .state('message', {
                 url: '/message',
-                template: '这是消息页'
+                templateUrl: 'app/main/message/message.html',
             })
-            .state('index.perInformation', {
+            .state('perInformation', {
                 url: '/perInformation',
-                template: '这是个人信息页'
+                templateUrl: 'app/main/perInformation/perInformation.html'
             })
-            .state('index.perSetting', {
+            .state('perSetting', {
                 url: '/perSetting',
-                template: '这是个人设置页'
+                templateUrl: 'app/main/perInformation/perInformation.html'
 
             })
     });

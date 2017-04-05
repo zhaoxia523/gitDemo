@@ -8,13 +8,15 @@
     width: 1200px;
     margin: 0 auto;
     position: relative;
+    color: white;
 }
 .midNavContent i{
     margin-left: -165px;
 }
 .backBtn{
     position: absolute;
-    right: 80px
+    right: 80px;
+    cursor: pointer;
 }
 
 .rightColorIcon ul{

@@ -3,8 +3,7 @@
  */
 'use strict';
 angular.module('app')
-    .controller('mainCtrl', ['$scope','userSer', function ($scope,userSer) {
-        $scope.isActive = true;
+    .controller('navTopCtrl', ['$scope','userSer', function ($scope,userSer) {
         userSer.getData().then(function (data) {
             $scope.user = data;
         })
