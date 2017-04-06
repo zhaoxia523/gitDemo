@@ -19,6 +19,8 @@
     cursor: pointer;
 }
 
+
+
 .rightColorIcon ul{
     list-style: none;
     width: 100px;
@@ -26,16 +28,25 @@
     position: absolute;
     right: 0;
     top:0;
+
 }
 
 .rightColorIcon ul li {
     float: left;
-    margin-right: 15px;
-}
-
-.rightColorIcon ul li a {
-    display: inline-block;
+    margin: 12px 15px 0 0;
     width: 10px;
     height: 10px;
-    background: red;
+    cursor: pointer;
+}
+
+.secColor{
+    background: lightblue;
+}
+
+.firstColor{
+    background: grey;
+}
+
+.thirdColor{
+    background: whitesmoke;
 }

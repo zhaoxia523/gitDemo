@@ -1,4 +1,8 @@
 .topNav{
+    width: 100%;
+    background: white;
+}
+.topNavCon{
     height: 65px;
     line-height: 65px;
     width: 1200px;

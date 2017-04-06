@@ -17,9 +17,11 @@ angular.module('app')
                 scope.$watch('faIcon', function (newVal) {
                     if(newVal){
                         ele.height(height);
+                        ele.parent().parent().css('background','linen');
                     }else{
                         ele.height(scope.height);
                         ele.css('overflow-y','hidden');
+                        ele.parent().parent().css('background','white');
                     }
                 })
             },50)

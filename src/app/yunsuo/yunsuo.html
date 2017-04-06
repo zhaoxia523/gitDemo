@@ -1,27 +1,30 @@
-<div class="cloudSearch">
-    <div class="searchContent">
-        <div class="searchLogo pull-left">
-            <img src="assets/img/yunsuo_logo.png">
-        </div>
-        <div class="pull-left">
-            <div class="search">
-                <div class="searchNav">
+<div class="cloudSearchCon">
+    <div class="cloudSearch">
+        <div class="searchContent">
+            <div class="searchLogo pull-left">
+                <img src="assets/img/yunsuo_logo.png">
+            </div>
+            <div class="pull-left">
+                <div class="search">
+                    <div class="searchNav">
                     <span class="searchSpan" ng-repeat="searchType in searchTypes" ng-click="isSelected($index,searchType.name)">
                         <i class="fa {{searchType.typeIcon}}" ng-class="{true:'searchActive',false:''}[isActive($index)]"></i>
                         <span ng-bind="searchType.cloudType" ng-class="{true:'searchActive',false:''}[isActive($index)]"></span>
                     </span>
-                </div>
-                <div class="searchInput">
-                    <input type="text" placeholder="请输入关键字" ng-model="inputContent">
-                    <button ng-click="searchDetail()"><i class="fa fa-search fa-lg fa-inverse"></i></button>
-                </div>
-                <div class="searchCheckBox">
-                    <input type="checkbox">
-                    <span>整词(提示:支持占位符 '?' 号及 '*' 号语法,如张*)</span>
+                    </div>
+                    <div class="searchInput">
+                        <input type="text" placeholder="请输入关键字" ng-model="inputContent">
+                        <button ng-click="searchDetail()"><i class="fa fa-search fa-lg fa-inverse"></i></button>
+                    </div>
+                    <div class="searchCheckBox">
+                        <input type="checkbox">
+                        <span>整词(提示:支持占位符 '?' 号及 '*' 号语法,如张*)</span>
+                    </div>
                 </div>
             </div>
+            <div class="clearfix"></div>
         </div>
-        <div class="clearfix"></div>
+        <div ui-view=""></div>
     </div>
-    <div ui-view=""></div>
 </div>
+

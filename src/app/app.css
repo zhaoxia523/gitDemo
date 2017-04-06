@@ -2,6 +2,9 @@ html,body,ul,li,a,span,p,div,img i{
     padding: 0;
     margin: 0;
 }
+body{
+    background: lightgray;
+}
 
 /**{*/
     /*padding: 0;*/

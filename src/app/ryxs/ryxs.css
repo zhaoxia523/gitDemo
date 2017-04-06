@@ -1,12 +1,13 @@
 .peopleClue{
     width: 1200px;
     margin: 0 auto;
-    /*background: pink;*/
+    min-height: 1000px;
+    background: white;
     /*height: 1000px;*/
 }
 
 .peopleMessage{
-    margin-top: 10px;
+    padding-top: 10px;
 }
 
 .peopleImage img{
